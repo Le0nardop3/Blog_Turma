@@ -1,0 +1,44 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item1{grid-area: img;}
+.item2{grid-area: title;  background-color: white;}
+.item3{grid-area: author; background-color: white;}
+.item4{grid-area: date;   background-color: white;}
+
+
+
+nav{
+    background-color:gray;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'img title title'
+    'img title title'
+    'img author date'
+    ;
+    gap:10px;
+    /* background-color: gray; */
+    padding: 10px;
+    width: 45%;
+    margin-bottom: 10px;
+    margin: 2px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+.item2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}

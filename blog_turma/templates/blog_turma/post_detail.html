@@ -1,0 +1,10 @@
+{% extends 'blog_turma/base.html' %}
+{% block content %}
+    
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text|safe }}</p>
+
+    {% endblock %}
+
+
+    <!-- % url 'post_detail' pk=post.pk % -->
